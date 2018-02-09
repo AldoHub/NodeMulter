@@ -1,0 +1,13 @@
+extends layout
+block content
+    section
+        p
+            a(href="/uploads") Uploaded files.
+        form(action="/uploads" method="POST" enctype="multipart/form-data" )
+           
+            input(type="file" name="image" )  
+            input(type="submit" value="upload")
+
+        div.error
+            if(error != null)
+                p=error

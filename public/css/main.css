@@ -1,0 +1,85 @@
+body{
+    background: #111;
+    color: aliceblue;
+    font-family: "Passion One", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.container {
+   
+}
+
+.container h1 {
+    color: #04FF5C;
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #04FF5C;
+}
+
+form {
+    padding: 20px;
+    width: 40%;
+    margin: 0 auto;
+}
+form input {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    border:none;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom:1px solid #04FF5C;
+    padding: 10px;
+}
+
+form input[type="submit"]{
+    background: #04FF5C;
+    color: #111;
+    border: none;
+    width: 30%;
+    right: 0;
+
+}
+
+.attrs .title {
+    font-size: 20px;
+   text-transform: uppercase;
+}
+
+.imagesContainer {
+    column-count: 2;
+    column-gap: 5px;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+    padding: 0;
+    display: inline-block;
+    animation: slideDown 400ms ease-in-out backwards;
+}
+.image img {
+    width: 100%;
+}
+
+.delete {
+    display: block;
+    position: absolute;
+    background: red;
+    color: #eee;
+    padding: 10px;
+    left: 0;
+    cursor: pointer;
+}
+@keyframes slideDown {
+    0% {opacity: 0;transform: translateY(-20px); };
+    100%{opacity:1;transform: translateY(0px); }
+}

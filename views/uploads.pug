@@ -1,0 +1,11 @@
+extends layout
+block content
+    section
+        h2 Uploaded Files.
+        p
+            a(href="/") Go back.
+        div.imagesContainer
+            each image in images
+                div.image(id=image.id)
+                    div.delete Delete
+                    img(src=image.image)
